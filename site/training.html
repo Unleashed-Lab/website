@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="unleashed.css">
+    <title>Unleashed Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="training.html">Training</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <! https://dev.to/dailydevtips1/light-and-dark-mode-image-in-html-lji >
+    <! https://chipcullen.com/how-to-have-dark-mode-image-that-works-with-user-choice-yo/>
+    <! https://www.shopify.com/blog/image-sizes/>
+      <picture>
+        <source
+          media="(max-width: 720px) and (prefers-color-scheme: dark)"
+          srcset="img/nav_logo_dark_mobile.png" 
+        >
+        <source
+          media="(max-width: 720px)"
+          srcset="img/nav_logo_light_mobile.png" 
+        >
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="img/nav_logo_dark.png" 
+        >
+        <img src="img/nav_logo_light.png">
+      </picture>
+  </header>
+
+  <main>
+    <p>
+    We provide multiple types of training services.
+    <details>
+      <summary>In-person, hosted by Unleashed Lab</summary>
+      <p>
+      We are in the process of creating course content focused on reverse engineering
+      "new age" targets, such as malware written in Swift, Go, or Rust.
+      </br></br>
+      We expect to launch these in-person courses in late 2024 or early 2025. Stay tuned
+      or <a href="contact.html">contact us</a> to book early seats.
+      </p>
+    </details>
+    <details>
+      <summary>Private, customer-focused, on-site</summary>
+      <p>
+      If you want to host a private training session internal to your company, we can
+      come to you. We can deliver training sessions on various topics related to the
+      <a href="services.html">services</a> we offer or we can partner with you to
+      deliver custom or more advanced content.
+      </br></br>
+      Note: we do not provide online or video-conference training as the experience
+      simply is not the same. That said, if you want to record our session for future
+      internal use, we can certainly support that.
+      </p>
+    </details>
+    <details>
+      <summary>Train the trainer, customer-owned</summary>
+      <p>
+      If you have a need to develop training materials specific to and owned by your
+      company, we can partner together to build your content. Once the content is developed
+      using templates of your choice, we will follow a "train the trainer" model delivering
+      the content to your team members who would be expected to deliver it going forward.
+      </p>
+    </details>
+    </p>
+  </main>
+
+  <footer>
+    <p>
+        Copyright © 2024, Unleashed Lab LLC.
+        <a href="https://simplecss.org">Created using simplecss</a>,
+        hand-jammed with love inside vim, and served via AWS S3.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 720px)"
+        srcset="img/footer.png"
+      >
+      <img src="img/footer.png">
+    </picture>
+
+  </footer>
+</body>
+</html>

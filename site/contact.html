@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="unleashed.css">
+    <title>Unleashed Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="training.html">Training</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <! https://dev.to/dailydevtips1/light-and-dark-mode-image-in-html-lji >
+    <! https://chipcullen.com/how-to-have-dark-mode-image-that-works-with-user-choice-yo/>
+    <! https://www.shopify.com/blog/image-sizes/>
+      <picture>
+        <source
+          media="(max-width: 720px) and (prefers-color-scheme: dark)"
+          srcset="img/nav_logo_dark_mobile.png" 
+        >
+        <source
+          media="(max-width: 720px)"
+          srcset="img/nav_logo_light_mobile.png" 
+        >
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="img/nav_logo_dark.png" 
+        >
+        <img src="img/nav_logo_light.png">
+      </picture>
+  </header>
+
+  <main>
+    <h4>Matt Brooks, Founding Director</h4>
+    <p>
+    Matt Brooks has nearly 20 years of experience in the Cybersecurity industry. All of his 
+    career has been spent in Fortune 500 companies, including 5 years as a reverse
+    engineer at Apple focused on anti-malware efforts in the operating system.
+    </br></br>
+    Coming from large enterprise environments and with experience at large scale, Matt 
+    is well-aware that reverse engineering challenges come in all shapes and sizes, 
+    both technical as well as organizational.
+    </br></br>
+    Matt's reverse engineering resume and detailed experience is available on-request.
+    </p>
+    <p>
+    If you are interested in learning more about us, reach out to admin@unleashedlab.io.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+        Copyright © 2024, Unleashed Lab LLC.
+        <a href="https://simplecss.org">Created using simplecss</a>,
+        hand-jammed with love inside vim, and served via AWS S3.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 720px)"
+        srcset="img/footer_mobile.png"
+      >
+      <img src="img/footer.png">
+    </picture>
+  </footer>
+</body>
+</html>

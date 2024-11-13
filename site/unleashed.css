@@ -1,0 +1,27 @@
+/* Light theme */
+::backdrop {
+  /* Make the top banner part match the rest of the main background */
+  --accent-bg: #fff;
+  --accent: 
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root,
+  ::backdrop {
+    /* Main background and accent background above body line for banner/header */
+    --bg: #121212;
+    --accent-bg: #121212;
+    /*
+    text-light is footer color, block-quote color, etc.
+    We match this to the un color in the unleashed logo.
+    */
+    --text-light: #a6a7a9;
+    /*
+    accent is for things like hyperlinks, etc.
+    We match this to the darker gray from our light mode logo
+    */
+    --accent: #76777b;
+    --accent-hover: #ccc
+  }
+}
