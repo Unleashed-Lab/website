@@ -1,14 +1,22 @@
 # Unleashed Website
 
-This repository hosts the website code for unleashedlab.io.
+This repository hosts the website code and infrastructure for unleashedlab.io.
 
 ## Helpful links:
+
+#### Web development
 
 ```
 https://simplecss.org
 https://github.com/kevquirk/simple.css/wiki/Getting-Started-With-Simple.css
 https://github.com/kevquirk/simple.css/blob/main/simple.css
 https://simplecss.org/demo
+```
+
+#### AWS CDK Infra/Dev
+
+```
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html
 ```
 
 ## Color Lists
