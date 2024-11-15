@@ -16,6 +16,7 @@ https://simplecss.org/demo
 #### AWS CDK Infra/Dev
 
 ```
+https://github.com/aws-samples/aws-cdk-examples/tree/main/python/static-site
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html
 ```
 
