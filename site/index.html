@@ -3,58 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="unleashed.css">
-    <title>Unleashed Lab</title>
+    <title>Unleashed</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="training.html">Training</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <! https://dev.to/dailydevtips1/light-and-dark-mode-image-in-html-lji >
-    <! https://chipcullen.com/how-to-have-dark-mode-image-that-works-with-user-choice-yo/>
-    <! https://www.shopify.com/blog/image-sizes/>
-      <picture>
-        <source
-          media="(max-width: 720px) and (prefers-color-scheme: dark)"
-          srcset="img/nav_logo_dark_mobile.png" 
-        >
-        <source
-          media="(max-width: 720px)"
-          srcset="img/nav_logo_light_mobile.png" 
-        >
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="img/nav_logo_dark.png" 
-        >
-        <img src="img/nav_logo_light.png">
-      </picture>
-  </header>
-
-  <main>
+    <header>
+        <img src="img/logo.png" alt="Unleashed Lab Logo" class="logo">
+    </header>
+    <main>
+        <section class="summary">
+            <h1>vRE. For Enterprise. And Managed Services.</h1>
+            <p></p>
+        </section>
+        <section class="contact">
+            <p>
+                <a href="mailto:matt@unleashedlab.io">matt@unleashedlab.io</a>
+                |
+                <a href="https://twitter.com/unleashedlab">@UnleashedLab</a>
+            </p>
+        </section>
+    </main>
+    <footer>
     <p>
-        Unleashed is a boutique lab focused on reverse engineering <a href="research.html">research</a> and <a href="training.html">training</a>.
+        Copyright © 2025, Unleashed Lab LLC.
     </p>
-  </main>
-
-  <footer>
-    <p>
-        Copyright © 2024, Unleashed Lab LLC.
-        <a href="https://simplecss.org">Created using simplecss</a>,
-        hand-jammed with love inside vim, and served via AWS S3.
-    </p>
-    <picture>
-      <source
-        media="(max-width: 720px)"
-        srcset="img/footer_mobile.png"
-      >
-      <img src="img/footer.png">
-    </picture>
-  </footer>
+    </footer>
 </body>
 </html>

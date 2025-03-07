@@ -1,27 +1,67 @@
-/* Light theme */
-::backdrop {
-  /* Make the top banner part match the rest of the main background */
-  --accent-bg: #fff;
-  --accent: 
+/* Theme */
+:root {
+    --bg-color: #585758;
+    --text-color: #ffffff;
+    --link-color: #8ab4f8;
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  :root,
-  ::backdrop {
-    /* Main background and accent background above body line for banner/header */
-    --bg: #121212;
-    --accent-bg: #121212;
-    /*
-    text-light is footer color, block-quote color, etc.
-    We match this to the un color in the unleashed logo.
-    */
-    --text-light: #a6a7a9;
-    /*
-    accent is for things like hyperlinks, etc.
-    We match this to the darker gray from our light mode logo
-    */
-    --accent: #76777b;
-    --accent-hover: #ccc
-  }
+/* Base Styles */
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.logo {
+    align-items: center;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    display: block;
+}
+
+.summary, .contact {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+body {
+    padding: 20px;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.summary h1 {
+    font-size: 2em;
+}
+
+@media (min-width: 600px) {
+    .summary h1 {
+        font-size: 3em;
+    }
 }
